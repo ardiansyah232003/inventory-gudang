@@ -21,69 +21,111 @@ if(!isset($_SESSION['log'])){
     header('location:index.php');
 }
 ?>
-<!doctype html>
-<html lang="en" class="fullscreen-bg">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>REGISTER PT. PEGADAIAN</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/demo.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/logo2.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo2.png">
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="Assetv2/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="Assetv2/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="Assetv2/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Assetv2/css/util.css">
+	<link rel="stylesheet" type="text/css" href="Assetv2/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!--===============================================================================================-->
 </head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('Assetv2/images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form action="register.php" method="post" class="login100-form validate-form">
+					
 
-<body background='assets/img/Screenshot (133).png'>
-	<!-- WRAPPER -->
-	<div id="wrapper">
-		<div class="vertical-align-wrap">
-			<div class="vertical-align-middle">
-				<div class="auth-box ">
-					<div class="left">
-						<div class="content">
-							<div class="header">
-								<p class="lead">REGISTER</p>
-							</div>
-							<form action="register.php" method="post">
-								<div class="form-group">
-									<label for="signup-email" class="control-label sr-only">Email</label>
-									<input type="text" name="email" class="form-control" placeholder="email" required>
-								</div>
-								<div class="form-group">
-									<label for="signup-password" class="control-label sr-only">Password</label>
-									<input type="password" name="password" class="form-control" placeholder="password" required>
-								</div>
-								<input type="submit" name="daftar" class="btn btn-primary btn-lg btn-block">
-							</form>
-							<br>
-							<center>
-								<p>Created By Magenta </p>
-							</center>
-						</div>
+					<span class="login100-form-title p-b-34 p-t-27">
+						Register
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="username" placeholder="Your Name">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
-				  <div class="right">
-						<div class="overlay"></div>
-						<div class="content text text-center">
-						  <img src="assets/img/logo2.png" alt="logo-icon" width="268" height="136">
-						  <img src="assets/img/logoa.png" alt="logo-icon" width="140px" height="140px">
-						  <p>Scan QR untuk cek persediaan barang</p>
-							<br>
-							
-							<h1 class="heading">PEGADAIAN SISTEM INVENTARIS</h1>
 
-						</div>
-				  </div>
-				</div>
+					<div class="wrap-input100 validate-input" data-validate = "Enter email">
+						<input class="input100" type="text" name="username" placeholder="Your Email">
+						<span class="focus-input100" data-placeholder="&#xf15a;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter password">
+						<input class="input100" type="text" name="username" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter your password again">
+						<input class="input100" type="password" name="pass" placeholder="Repeat your password">
+						<span class="focus-input100" data-placeholder="&#xf190;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Register
+						</button>
+					</div>
+
+					<div class="text-center p-t-80">
+						<a class="txt1" href="login.php">
+							I am already member
+						</a>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
-	<!-- END WRAPPER -->
-</body>
+	
 
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="Assetv2/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Assetv2/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Assetv2/vendor/bootstrap/js/popper.js"></script>
+	<script src="Assetv2/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Assetv2/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Assetv2/vendor/daterangepicker/moment.min.js"></script>
+	<script src="Assetv2/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="Assetv2/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="Assetv2/js/main.js"></script>
+
+</body>
 </html>
